@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./BurgerIngredient.module.css";
 import PropTypes from "prop-types";
+import { validate } from "@babel/types";
 
 class BurgerIngredient extends Component {
   render() {
@@ -57,6 +58,8 @@ class BurgerIngredient extends Component {
     return ingredient;
   }
 }
+/*to validate that im getting the right type */
+
 BurgerIngredient.propTypes = {
   type: PropTypes.string.isRequired
 };
